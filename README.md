@@ -1,2 +1,2 @@
 # SoftUniPractice
-Всички uпражнения и задачи в SoftUni
+Всички упражнения и задачи в SoftUni
