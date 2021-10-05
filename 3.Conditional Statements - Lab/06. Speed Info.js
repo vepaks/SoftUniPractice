@@ -12,5 +12,3 @@ function speedTest (input) {
         console.log ("extremely fast");
     }    
 }
-
-speedTest (["8"]);
