@@ -1,3 +1,5 @@
-function Hello (imput) {
-    console.log (`Hello, ${imput[0]}!`);
+function Hello(imput) {
+    console.log(`Hello, ${imput[0]}!`);
+
+
 }
