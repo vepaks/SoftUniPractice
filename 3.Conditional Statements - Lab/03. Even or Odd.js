@@ -1,9 +1,9 @@
-function oddEven (input) {
-    
+function oddEven(input) {
+
     let num = Number(input[0]);
     if (num % 2 == 0) {
-        console.log ("even");
+        console.log("even");
     } else {
-        console.log ("odd");
+        console.log("odd");
     }
 }
