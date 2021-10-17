@@ -23,4 +23,5 @@ function checkPersonalTitles(input) {
     }
 }
 checkPersonalTitles(["17",
-"m"]);
+    "m"
+]);
