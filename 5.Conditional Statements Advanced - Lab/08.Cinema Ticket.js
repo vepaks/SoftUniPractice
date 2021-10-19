@@ -1,0 +1,3 @@
+function checkTicketPrice(params) {
+    
+}
