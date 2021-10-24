@@ -10,7 +10,7 @@ function checkincome(input) {
 
     switch (cinemaDay) {
         case "Premiere":
-            console.log(`${(premiereDayTicketPrice*(cinemaEd*cinemaColumn)).toFixed(2)} eva`);
+            console.log(`${(premiereDayTicketPrice*(cinemaEd*cinemaColumn)).toFixed(2)} leva`);
             break;
         case "Normal":
             console.log(`${(normalDayTicketPrice*(cinemaEd*cinemaColumn)).toFixed(2)} leva`);
