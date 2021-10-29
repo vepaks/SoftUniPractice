@@ -37,8 +37,8 @@ function checkBudget(input) {
         boatPrice *= 0.95;
     }
 
-    // печатам резултат
-    if (boatPrice < budget) {
+    // печатам резултат (при проверка на бюджет не забравяме '=')
+    if (boatPrice <= budget) {
         console.log (`Yes! You have ${(budget - boatPrice).toFixed(2)} leva left.`);
     } else if ( boatPrice > budget ) {
         console.log (`Not enough money! You need ${(boatPrice - budget).toFixed(2)} leva.`);
