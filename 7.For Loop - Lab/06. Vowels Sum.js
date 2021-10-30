@@ -2,7 +2,7 @@ function getAndCalcNum(input) {
     let text = input[0];
     let result = 0;
 
-    for (var i = 0; i < text.length; i++) {
+    for (let i = 0; i < text.length; i++) {
         let c = text[i]; //в 'с' се намират всички символи от text
 
         //проверяваме символите в 'с' и определяме стойност
