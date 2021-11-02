@@ -14,11 +14,11 @@ function getHistogram(input) {
         // провевяваме диапазоните и увечаваме стойностите на променливите
         if (c < 200) {
             p1++;
-        } else if (c > 200 && c < 399) {
+        } else if (c <= 399) {
             p2++;
-        } else if (c > 400 && c < 599) {
+        } else if (c <= 599) {
             p3++;
-        } else if (c > 600 && c < 799) {
+        } else if (c <= 799) {
             p4++;
         } else if (c >= 800) {
             p5++;
