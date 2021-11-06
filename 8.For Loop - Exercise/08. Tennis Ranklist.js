@@ -8,7 +8,7 @@ function checkPoints(input) {
         winsCounts = 0,
         winsPercentage = 0;
 
-    // правим цъл за проверка на данните от масива
+    // правим цикъл за проверка на данните от масива
     for (let i = 2; i < input.length; i++) {
 
         let c = input[i]; // в 'c' са инициализирани всички стойности на масива
