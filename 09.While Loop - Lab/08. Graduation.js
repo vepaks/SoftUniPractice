@@ -15,13 +15,13 @@ function checkGrade(input) {
     let isExecuted = false;
 //създаваме цикъл за трупане на класове, трупане на лоши оценки, проверка за лоши оценките
 // печатане на резултат при натрупане достатъчно лоши оценки
-    while (grade < 12) {
+    while (grade <= 12) {
         let tempGrade = Number(input[index]);
         index++;
 
-        if (tempGrade <= 4) {
+        if (tempGrade < 4) {
             badGrade++;
-            if (badGrade === 2) {
+            if (badGrade >= 2) {
                 isExecuted = true;
                 console.log(`${name} has been excluded at ${grade} grade`);
                 break;
