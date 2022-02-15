@@ -1,12 +1,17 @@
-function checkSum() {
+function checkSum(num) {
 
-    let newFunction = function () {
+    let newArr = [];
 
+    for (let index = 0; index < num; index++) {
+        newArr.push(num);
 
-    };
+    }
 
-    console.log(newFunction());
+    for (let index = 0; index < num; index++) {
+        let string = newArr.join(' ');
+        console.log(string);
+    }
 
 }
 
-checkSum(23, 6, 10);
+checkSum(7);
