@@ -1,12 +1,22 @@
-function checkSum() {
+function checkSum(num) {
 
-    let newFunction = function () {
+    let sum = 0;
+    for (let index = 1; index < num; index++) {
+        if (num % index == 0) {
+            sum += index;
+        }
+    }
 
+    if (sum == num) {
+        console.log("We have a perfect number!");
+    } else {
+        console.log("It's not so perfect.");
 
-    };
-
-    console.log(newFunction());
+    }
 
 }
 
-checkSum(23, 6, 10);
+
+checkSum(6);
+checkSum(28);
+checkSum(1236498);
