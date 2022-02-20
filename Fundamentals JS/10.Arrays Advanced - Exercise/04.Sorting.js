@@ -12,5 +12,6 @@ function sort(arr) {
     console.log(newArr.join(' '));
 
 }
+
 sort([1, 21, 3, 52, 69, 63, 31, 2, 18, 94]);
 sort([34, 2, 32, 45, 690, 6, 32, 7, 19, 47]);
