@@ -22,7 +22,6 @@ function getList(arr) {
         }
 
     }
-
     console.log(newArr.join('\n'));
 
 }
