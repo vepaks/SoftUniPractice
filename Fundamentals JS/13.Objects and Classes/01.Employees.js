@@ -8,10 +8,9 @@ function getString(arr) {
             name: arrElement,
             personalNumber: number,
         };
-
         console.log(`Name: ${obj.name} -- Personal Number: ${obj.personalNumber}`);
-
     }
+
 }
 
 getString([
