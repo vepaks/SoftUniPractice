@@ -8,7 +8,9 @@ function getString(arr) {
         phonebook[name] = phoneNumber;
 
     }
-    console.log(phonebook);
+    for (let phonebookKey in phonebook) {
+        console.log(`${phonebookKey} -> ${phonebook[phonebookKey]}`);
+    }
 
 }
 
