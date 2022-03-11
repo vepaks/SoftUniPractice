@@ -12,7 +12,6 @@
 //         } else {
 //             map.set(product, qty);
 //         }
-//
 //     }
 //     console.log(map);
 // }
@@ -32,17 +31,12 @@ function getString(arr) {
         } else {
             catalog[product] = qry;
         }
-
     }
-
     console.log(catalog);
-
 }
-
 
 getString(['tomatoes 10',
     'coffee 5',
     'olives 100',
     'coffee 40',
-
 ]);
