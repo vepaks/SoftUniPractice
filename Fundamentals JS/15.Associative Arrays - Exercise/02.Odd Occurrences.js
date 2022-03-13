@@ -1,35 +1,26 @@
 function getString(string) {
 
+    let words = {};
+    let newArr = [];
     let checkElement = string.toLowerCase().split(' ');
 
-    let word = {};
+    for (let word of checkElement) {
 
-    for (const token of checkElement) {
-        let count = 0;
-        for (let index = 0; index < checkElement.length; index++) {
-            let currElement = checkElement[index];
-
-            if (currElement === token) {
-                count++;
-            }
-
+        if (words.hasOwnProperty(word)) {
+            words[word]++;
+        } else {
+            words[word] = 1;
         }
-
-        if (count % 2 === 1) {
-            word[token] = token;
-        }
-
-        count = 0;
     }
 
-    let sort = Object.entries(word);
-    sort.sort(sorting);
+    for (const wordsKey in words) {
 
-    function sorting(a, b) {
-        return a[0].localeCompare(b[0]);
+        if (words[wordsKey] % 2 === 1) {
+            newArr.push([wordsKey]);
+        }
     }
 
-    console.log(sort.join(' '));
+    console.log(newArr.join(' '));
 
 }
 
