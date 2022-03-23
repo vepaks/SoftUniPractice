@@ -34,6 +34,13 @@
 // }
 
 
+function letAtt(input) {
+
+}
+
+let arr = [];
+
+
 function partyTime(input) {
     let invitedList = input.splice(0, input.indexOf("PARTY"));
     input.splice(0, 1);
