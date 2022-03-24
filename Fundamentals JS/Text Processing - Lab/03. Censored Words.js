@@ -1,17 +1,15 @@
-getString('A fuck sentence with some words', 'fuck');
+getString('A fuck sentence with some fuck words', 'fuck');
+
+// function getString(string, word) {
+//     while (string.includes(word)) {
+//         string = string.replace(word, '*'.repeat(word.length));
+//     }
+//     console.log(string);
+// }
 
 
-function getString(string, word) {
-
-    function repeat(input) {
-        let newWord = '*';
-        for (let i = 0; i <input.length ; i++) {
-            newWord += '*';
-        }
-        return newWord;
-    }
-
-        let newString = string.replace(word, repeat(word));
-        console.log(newString);
-
+function getString (text, word) {
+    let tokens = text.split(word);
+    console.log(tokens.join('*'.repeat(word.length)));
 }
+
