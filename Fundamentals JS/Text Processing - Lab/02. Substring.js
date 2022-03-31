@@ -1,5 +1,5 @@
-function getString(string, start, count) {
-    let newString = string.substring(start, start + count);
+function getString(string, start, end) {
+    let newString = string.substring(start, end);
     console.log(newString);
 }
 

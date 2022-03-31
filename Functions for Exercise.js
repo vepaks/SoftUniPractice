@@ -23,3 +23,24 @@ function moveChar(string, num) {
     let end = string.substring(num);
     return end + start;
 }
+
+//смяна на букви или думи в низ
+changeCharInString('A small sentence with some words', 'small');
+
+function changeCharInString(text, word) {
+    let tokens = text.split(word);
+    return tokens.join('*'.repeat(word.length));
+}
+
+
+//подмяна на звездички с дума
+
+getWord('great', 'softuni is ***** place for learning new programming languages');
+
+function getWord(words, string) {
+    words = words.split(', ');
+    for (const word of words) {
+        string = string.replace('*'.repeat(word.length), words);
+    }
+    return string;
+}

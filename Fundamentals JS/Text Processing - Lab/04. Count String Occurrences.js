@@ -16,6 +16,7 @@ solve('softuni is great place for learning new programming languages', 'softuni'
 solve('This is a word and it also is a sentence', 'is');
 
 function solve(string, word) {
-    const tokens = string.split(' '), count = tokens.filter(x => x === word);
+    const tokens = string.split(' '),
+        count = tokens.filter(x => x === word);
     console.log(count.length);
 }
